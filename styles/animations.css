@@ -18,7 +18,7 @@
   color: var(--accent-color);
   opacity: 0.6;
   position: absolute;
-  left: -18px;
+  left: -20px;
   top: 1px;
   animation: moving 0.5s ease-in-out alternate infinite;
 }
@@ -114,7 +114,7 @@
   .button {
     position: relative;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
+    transition: box-shadow 0.3s ease;
   }
   
   .button::before {
@@ -131,5 +131,4 @@
   
   .button:hover::before {
     transform: translate(0);
-    background-color:var(--accent-color);
   }

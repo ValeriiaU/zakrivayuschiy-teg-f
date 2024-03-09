@@ -78,7 +78,7 @@
   font-size: 14px;
   padding: 0;
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button::after {
@@ -144,7 +144,7 @@
 
 .images__global {
   inline-size: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .filter__contrast {
@@ -230,6 +230,7 @@
   cursor: pointer;
   padding: 0;
   block-size: 38px;
+  transition: border 0.3s ease;
 }
 
 .sparks {
@@ -329,7 +330,7 @@
 .dilog__container {
   display: grid;
   justify-content: center;
-  inline-size: clamp(341px, 100vw - 1065px, 357px);
+  inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   min-inline-size: 341px;
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
@@ -375,10 +376,16 @@
   font-family: var(--accent-font);
   font-size: 14px;
   inline-size: 100%;
+  block-size: 38px;
   padding: 12.5px 0px;
   border: 2px solid var(--accent-color);
-  text-transform: uppercase;
   cursor: pointer;
+}
+
+.dialog__button__text {
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+  color: var(--text-button-color);
 }
 
 .dilog__container::backdrop {
@@ -398,7 +405,6 @@
 }
 
 .button:focus-visible {
-  text-decoration: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
